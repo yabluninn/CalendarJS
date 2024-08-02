@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 :root {
   --primary-color: #3d60ee;
   --secondary-color: #d0d8fa;
@@ -8,6 +10,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -38,6 +44,7 @@ body {
 .logo-title {
   font-size: 28px;
   font-weight: bold;
+  font-family: "Nunito", sans-serif;
 }
 
 .logo-subtitle {
@@ -81,9 +88,13 @@ body {
   color: var(--primary-color) !important;
 }
 
-.statistics-page-btn,
+.analytics-page-btn,
 .shifts-page-btn,
-.departments-page-btn {
+.departments-page-btn,
+.dashboard-page-btn,
+.shedule-page-btn,
+.workers-page-btn,
+.requests-page-btn {
   margin-top: 10px;
 }
 
@@ -103,7 +114,7 @@ body {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  margin-top: 350px;
+  margin-top: 200px;
   padding-top: 5px;
   border-top: 1px solid #a5b7f7;
 }
