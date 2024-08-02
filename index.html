@@ -11,35 +11,78 @@
     ></script>
   </head>
   <body>
-    <div class="calendar-container">
-      <div class="calendar-header">
-        <button id="prev-month">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <div id="current-month"></div>
-        <button id="next-month">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
+    <nav class="left-nav">
+      <div class="logo">
+        <p class="logo-title">EMPLOYIFY</p>
+        <p class="logo-subtitle">SHIFT MANAGER</p>
       </div>
-      <div class="calendar-body">
-        <div class="calendar-days">
-          <div class="calendar-day">Sun</div>
-          <div class="calendar-day">Mon</div>
-          <div class="calendar-day">Tue</div>
-          <div class="calendar-day">Wed</div>
-          <div class="calendar-day">Thu</div>
-          <div class="calendar-day">Fri</div>
-          <div class="calendar-day">Sat</div>
+      <div class="left-nav-buttons">
+        <button class="calendar-page-btn left-nav-button-selected">
+          <i class="fa-regular fa-calendar"></i>
+          <p>Calendar</p>
+        </button>
+        <button class="statistics-page-btn">
+          <i class="fa-solid fa-chart-line"></i>
+          <p>Statistics</p>
+        </button>
+        <button class="shifts-page-btn">
+          <i class="fa-solid fa-business-time"></i>
+          <p>Shifts</p>
+        </button>
+        <button class="departments-page-btn">
+          <i class="fa-solid fa-users"></i>
+          <p>Departments</p>
+        </button>
+        <div class="left-nav-other-btns">
+          <button class="settings-page-btn">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <button class="notifications-page-btn">
+            <i class="fa-solid fa-bell"></i>
+          </button>
+          <button class="log-out-page-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
         </div>
-        <div class="calendar-dates" id="calendar-dates"></div>
       </div>
-      <div class="calendar-footer">
-        <button class="today-btn" id="today-btn">
-          <i class="fa-solid fa-calendar-day"></i>
-          <p>Today</p>
-        </button>
+    </nav>
+    <main class="main-container">
+      <header>
+        <div class="h-user-wrapper">
+          <p class="h-user-role">Manager</p>
+          <img src="img/avatar.svg" alt="" />
+        </div>
+      </header>
+      <div class="calendar-container">
+        <div class="calendar-header">
+          <button id="prev-month">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div id="current-month"></div>
+          <button id="next-month">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="calendar-body">
+          <div class="calendar-days">
+            <div class="calendar-day">Sun</div>
+            <div class="calendar-day">Mon</div>
+            <div class="calendar-day">Tue</div>
+            <div class="calendar-day">Wed</div>
+            <div class="calendar-day">Thu</div>
+            <div class="calendar-day">Fri</div>
+            <div class="calendar-day">Sat</div>
+          </div>
+          <div class="calendar-dates" id="calendar-dates"></div>
+        </div>
+        <div class="calendar-footer">
+          <button class="today-btn" id="today-btn">
+            <i class="fa-solid fa-calendar-day"></i>
+            <p>Today</p>
+          </button>
+        </div>
       </div>
-    </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
