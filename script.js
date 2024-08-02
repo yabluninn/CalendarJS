@@ -2,6 +2,7 @@ const calendarDates = document.getElementById("calendar-dates");
 const currentMonth = document.getElementById("current-month");
 const prevMonthButton = document.getElementById("prev-month");
 const nextMonthButton = document.getElementById("next-month");
+const todayButton = document.getElementById("today-btn");
 
 let date = new Date();
 let selectedDate = new Date();
@@ -67,6 +68,7 @@ function renderCalendar() {
       month === selectedDate.getMonth()
     ) {
       day.classList.add("selected");
+      day.classList.remove("today");
     }
 
     day.addEventListener("click", () => {
@@ -92,6 +94,11 @@ prevMonthButton.addEventListener("click", () => {
 
 nextMonthButton.addEventListener("click", () => {
   date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+});
+
+todayButton.addEventListener("click", () => {
+  selectedDate = new Date();
   renderCalendar();
 });
 

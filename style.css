@@ -14,8 +14,9 @@ body {
 }
 
 .calendar-container {
-  width: 550px;
-  height: 550px;
+  /* width: 550px;
+  height: fit-content; */
+  width: 680px;
   border-radius: 10px;
   overflow: hidden;
   background-color: white;
@@ -58,7 +59,8 @@ body {
 }
 
 .calendar-day {
-  width: 75.6px;
+  /* width: 75.6px; */
+  width: 94.2px;
   text-align: center;
   padding: 10px;
   font-size: 14px;
@@ -71,8 +73,11 @@ body {
 }
 
 .calendar-date {
-  width: 75.6px;
-  height: 75.6px;
+  /* width: 75.6px;
+  height: 75.6px; */
+  width: 84.2px;
+  height: 84.2px;
+  margin: 5px;
   text-align: center;
   padding: 15px;
   font-size: 16px;
@@ -97,8 +102,40 @@ body {
 
 .calendar-date.today {
   border: 2px dashed #e04932;
+  color: #e04932;
 }
 
 .calendar-date.disabled {
   color: #bbb;
+}
+
+.calendar-footer {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.today-btn {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #e04932;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.today-btn i {
+  margin-right: 15px;
 }
