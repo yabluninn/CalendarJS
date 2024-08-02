@@ -258,6 +258,10 @@ header {
   align-items: center;
 }
 
+.calendar-date.weekend {
+  background-color: #b1c1f238;
+}
+
 .calendar-date:hover {
   background-color: #b1c1f238;
   /* color: white; */

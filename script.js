@@ -71,6 +71,11 @@ function renderCalendar() {
       day.classList.remove("today");
     }
 
+    const currentDayOfWeek = new Date(year, month, i).getDay();
+    if (currentDayOfWeek === 0 || currentDayOfWeek === 6) {
+      day.classList.add("weekend");
+    }
+
     day.addEventListener("click", () => {
       selectedDate = new Date(year, month, i);
       renderCalendar();
