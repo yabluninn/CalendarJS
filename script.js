@@ -104,6 +104,8 @@ nextMonthButton.addEventListener("click", () => {
 
 todayButton.addEventListener("click", () => {
   selectedDate = new Date();
+  date.setMonth(selectedDate.getMonth());
+  date.setFullYear(selectedDate.getFullYear());
   renderCalendar();
 });
 
