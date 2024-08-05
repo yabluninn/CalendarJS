@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stylish Calendar</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/shedule.css" />
+    <link rel="stylesheet" href="style/workers.css" />
     <script
       src="https://kit.fontawesome.com/639cd4a693.js"
       crossorigin="anonymous"
@@ -65,7 +68,7 @@
           <img src="img/avatar.svg" alt="" />
         </div>
       </header>
-      <div class="calendar-page">
+      <div class="calendar-page" style="display: none">
         <div class="calendar-container">
           <div class="calendar-header">
             <button id="prev-month">
@@ -136,9 +139,9 @@
                     </button>
                   </div>
                 </div>
-                <button class="dd-set-new-worker-btn">
+                <button class=".btn-dashed-primary">
                   <i class="fa-solid fa-user-plus"></i>
-                  <p>Add new worker</p>
+                  <p>Add worker</p>
                 </button>
               </div>
             </div>
@@ -164,10 +167,22 @@
 
                 <button class="dd-set-new-worker-btn">
                   <i class="fa-solid fa-user-plus"></i>
-                  <p>Add new worker</p>
+                  <p>Add worker</p>
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="workers-page">
+        <div class="workers-container">
+          <div class="workers-header"></div>
+          <div class="workers-list-grid">
+            <div class="workers-worker-item"></div>
+            <button class="btn-dashed-primary">
+              <i class="fa-solid fa-user-plus"></i>
+              <p>Add new worker</p>
+            </button>
           </div>
         </div>
       </div>

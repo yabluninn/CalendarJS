@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #3d60ee;
+  --secondary-color: #d0d8fa;
+  --neutral-color: white;
+}
+
+.workers-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.workers-container {
+  width: 80%;
+  height: 90%;
+  border: 1px solid;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.workers-header {
+  width: 100%;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+}
+
+.workers-list-grid {
+  width: 100%;
+  height: fit-content;
+  border: 1px solid;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.workers-worker-item {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+}
